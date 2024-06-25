@@ -1,11 +1,11 @@
 export CUDA_VISIBLE_DEVICES=0
 cd ..
 python -u run.py \
-    --is_training 1 \
+    --is_training 0 \
     --device cuda \
     --dataset_name mnist \
-    --train_data_paths /workspace/wuhaixu/predrnn/data/moving-mnist-example/moving-mnist-train.npz \
-    --valid_data_paths /workspace/wuhaixu/predrnn/data/moving-mnist-example/moving-mnist-valid.npz \
+    --train_data_paths data/moving-mnist-example/moving-mnist-train.npz \
+    --valid_data_paths data/moving-mnist-example/moving-mnist-valid.npz \
     --save_dir checkpoints/mnist_predrnn_v2 \
     --gen_frm_dir results/mnist_predrnn_v2 \
     --model_name predrnn_v2 \
@@ -26,8 +26,8 @@ python -u run.py \
     --r_exp_alpha 2500 \
     --lr 0.0001 \
     --batch_size 8 \
-    --max_iterations 80000 \
-    --display_interval 100 \
+    --max_iterations 100 \
+    --display_interval 10 \
     --test_interval 5000 \
     --snapshot_interval 5000 \
-#    --pretrained_model ./checkpoints/mnist_predrnn_v2/mnist_model.ckpt
+    --pretrained_model ./checkpoints/original/mnist_model.ckpt

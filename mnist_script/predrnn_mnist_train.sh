@@ -4,8 +4,8 @@ python -u run.py \
     --is_training 1 \
     --device cuda \
     --dataset_name mnist \
-    --train_data_paths /workspace/wuhaixu/predrnn/data/moving-mnist-example/moving-mnist-train.npz \
-    --valid_data_paths /workspace/wuhaixu/predrnn/data/moving-mnist-example/moving-mnist-valid.npz \
+    --train_data_paths data/moving-mnist-example/moving-mnist-train.npz \
+    --valid_data_paths data/moving-mnist-example/moving-mnist-valid.npz \
     --save_dir checkpoints/mnist_predrnn \
     --gen_frm_dir results/mnist_predrnn \
     --model_name predrnn \
@@ -25,7 +25,7 @@ python -u run.py \
     --sampling_changing_rate 0.00002 \
     --lr 0.0003 \
     --batch_size 8 \
-    --max_iterations 80000 \
-    --display_interval 100 \
+    --max_iterations 100 \
+    --display_interval 10 \
     --test_interval 5000 \
-    --snapshot_interval 5000
+    --snapshot_interval 5000 \

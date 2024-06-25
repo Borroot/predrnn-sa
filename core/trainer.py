@@ -62,7 +62,7 @@ def test(model, test_input_handle, configs, itr):
         img_gen = model.test(test_dat, real_input_flag)
 
         img_gen = preprocess.reshape_patch_back(img_gen, configs.patch_size)
-        output_length = configs.total_length - configs.input_length 
+        output_length = configs.total_length - configs.input_length
         img_out = img_gen[:, -output_length:]
 
         # MSE per frame
@@ -103,7 +103,7 @@ def test(model, test_input_handle, configs, itr):
 
             psnr[i] += metrics.batch_psnr(pred_frm, real_frm)
             for b in range(configs.batch_size):
-                score, _ = compare_ssim(pred_frm[b], real_frm[b], full=True, multichannel=True)
+                score, _ = compare_ssim(pred_frm[b], real_frm[b], full=True, multichannel=True, channel_axis=2)
                 ssim[i] += score
 
         # save prediction examples
