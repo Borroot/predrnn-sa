@@ -1,0 +1,3360 @@
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:31:51 test...
+mse per seq: 1212.9521480391782
+80.27076623142962
+99.39303034280677
+110.4559734911325
+118.75218261963872
+125.01945866351147
+129.5402959494227
+133.0910664140939
+136.17882571545948
+138.90657022008935
+141.3439783915937
+ssim per frame: 0.46496588
+0.6390255
+0.5500318
+0.49244168
+0.45481685
+0.43424875
+0.42545897
+0.42177212
+0.41772798
+0.41127667
+0.40285832
+psnr per frame: 15.483241
+17.2148
+16.286276
+15.827962
+15.514099
+15.2955885
+15.145627
+15.027632
+14.92609
+14.83675
+14.757579
+lpips per frame: 0.52675855
+0.3166494
+0.43146902
+0.49204123
+0.52702296
+0.55176413
+0.5680564
+0.58019114
+0.5910246
+0.6004696
+0.6088974
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-1000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-1000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:32:57 test...
+mse per seq: 1124.0084837947984
+60.735487221714
+80.18874440327227
+94.43809300924401
+106.32091868450364
+115.50665393507624
+122.85646142921294
+128.7995701985187
+134.1005561552852
+138.6597150932833
+142.40228366468804
+ssim per frame: 0.64130354
+0.77848953
+0.71736
+0.67675114
+0.64756745
+0.6273558
+0.6130851
+0.60238224
+0.59242046
+0.583437
+0.5741861
+psnr per frame: 15.906996
+18.443338
+17.232327
+16.521353
+16.007915
+15.653361
+15.392894
+15.186545
+15.012821
+14.866936
+14.752451
+lpips per frame: 0.3970453
+0.22006541
+0.28846824
+0.33626583
+0.3735685
+0.40540186
+0.43061414
+0.4512962
+0.47153044
+0.48825273
+0.5049897
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-1500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-1500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:34:04 test...
+mse per seq: 1070.8745423435687
+50.90246382870349
+69.55494152206973
+84.9370734279893
+98.75834012318806
+109.97127591175249
+118.99304882493843
+125.95057240068674
+132.04024251302084
+137.4194516407917
+142.34713215042788
+ssim per frame: 0.6992941
+0.830846
+0.77785885
+0.7383498
+0.7084374
+0.6865675
+0.67113626
+0.6594757
+0.64918983
+0.6399734
+0.63110644
+psnr per frame: 16.194597
+19.24849
+17.885494
+17.005466
+16.346144
+15.879537
+15.538889
+15.2908325
+15.087992
+14.910753
+14.752375
+lpips per frame: 0.3165385
+0.18131885
+0.22677465
+0.26121894
+0.2910142
+0.31730798
+0.3397351
+0.3597537
+0.37922657
+0.39603662
+0.4129984
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-2000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-2000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:35:11 test...
+mse per seq: 970.2462065210304
+45.29932516932966
+61.89928822345044
+75.64513172011777
+88.46202712461172
+98.89011576089514
+107.39562157933491
+114.31761105089302
+120.737556120478
+126.25622463609321
+131.3433051358265
+ssim per frame: 0.7093092
+0.84908634
+0.79784936
+0.7563693
+0.7235522
+0.6983441
+0.6791298
+0.66436535
+0.6517281
+0.6409989
+0.63166875
+psnr per frame: 16.634266
+19.7669
+18.408215
+17.517601
+16.83039
+16.336164
+15.976277
+15.700274
+15.463078
+15.260748
+15.08302
+lpips per frame: 0.2866676
+0.16145585
+0.19977959
+0.23000008
+0.25743186
+0.28216982
+0.30522734
+0.32684425
+0.3488215
+0.36822808
+0.3867172
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-2500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-2500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:36:19 test...
+mse per seq: 884.5512862914059
+41.05495998275328
+55.61396185940049
+68.05202882452662
+80.13054721326714
+89.6634908775728
+97.565172953778
+104.39003484028889
+110.82178331857705
+116.21570954839868
+121.04359687284294
+ssim per frame: 0.7337406
+0.86373407
+0.8184698
+0.78151494
+0.75010926
+0.7262982
+0.70730865
+0.691228
+0.677506
+0.6657662
+0.6554711
+psnr per frame: 17.065624
+20.203259
+18.887129
+17.99679
+17.28072
+16.793165
+16.416842
+16.11957
+15.85563
+15.643753
+15.459404
+lpips per frame: 0.25692776
+0.14577162
+0.17862183
+0.20484976
+0.22851881
+0.2498285
+0.27096313
+0.29237774
+0.31280497
+0.3327826
+0.35275856
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-3000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-3000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:37:26 test...
+mse per seq: 863.2097232389641
+38.42431520362456
+52.26205321775383
+64.29315559356567
+76.07851982882703
+86.2898302499549
+95.19400179146763
+102.68252771829505
+109.87156787550593
+116.08414085418823
+122.02961090578133
+ssim per frame: 0.7650656
+0.87840647
+0.84027165
+0.8090141
+0.78265136
+0.7611964
+0.74333763
+0.72820026
+0.7145446
+0.70220673
+0.6908271
+psnr per frame: 17.23808
+20.510502
+19.191002
+18.284143
+17.548635
+16.993982
+16.565165
+16.229279
+15.926919
+15.677794
+15.453372
+lpips per frame: 0.2206138
+0.13386162
+0.16262579
+0.1839195
+0.20147446
+0.21816228
+0.23192342
+0.24659666
+0.26153556
+0.27575094
+0.290288
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-3500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-3500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:38:33 test...
+mse per seq: 834.0551242828369
+37.21656836850576
+50.66975989590687
+62.56796310608645
+74.28749335721794
+84.03743996677629
+92.13854082712686
+99.31394691926887
+105.68195165304773
+111.54450428054993
+116.5969559083502
+ssim per frame: 0.7573655
+0.88345724
+0.8431759
+0.8092032
+0.77959305
+0.7546133
+0.73368824
+0.71544605
+0.6993901
+0.68413633
+0.6709516
+psnr per frame: 17.366796
+20.661758
+19.324173
+18.392492
+17.637775
+17.095268
+16.681547
+16.346857
+16.068977
+15.829485
+15.629645
+lpips per frame: 0.2403064
+0.12738334
+0.15812975
+0.1833484
+0.2065583
+0.22886097
+0.25103107
+0.27472314
+0.30053076
+0.32422054
+0.34827787
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-4000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-4000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:39:42 test...
+mse per seq: 809.8732382916064
+35.43747203321342
+47.96095141062296
+59.622831781226466
+70.99911549579666
+80.54290895576936
+89.22538965677161
+96.73334484789746
+103.7873315772857
+109.93395603899975
+115.62993649402297
+ssim per frame: 0.748531
+0.8862586
+0.8465023
+0.8106278
+0.7784124
+0.7508528
+0.7257594
+0.70298266
+0.6812656
+0.6611493
+0.64149874
+psnr per frame: 17.519972
+20.87418
+19.566463
+18.603994
+17.842844
+17.29029
+16.831968
+16.46798
+16.15377
+15.895055
+15.673171
+lpips per frame: 0.23379087
+0.12165898
+0.15200327
+0.1778443
+0.20033531
+0.22272293
+0.24502665
+0.26850006
+0.29313844
+0.31624466
+0.3404342
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-4500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-4500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:40:50 test...
+mse per seq: 802.9832979991254
+35.07660167954533
+48.28261321041
+60.22376808871227
+71.71129945195823
+81.31376398232088
+88.96835155563662
+96.09535584966821
+102.26578356271767
+107.19626350862434
+111.84949710953188
+ssim per frame: 0.7678902
+0.89289004
+0.85426915
+0.82056767
+0.79052454
+0.7654545
+0.74482524
+0.72610253
+0.7093289
+0.69449556
+0.6804439
+psnr per frame: 17.544699
+20.93252
+19.54751
+18.56731
+17.802303
+17.244278
+16.836802
+16.491932
+16.214422
+15.999
+15.810926
+lpips per frame: 0.23412354
+0.11613743
+0.14766395
+0.17496258
+0.19870245
+0.22279814
+0.24590947
+0.27074167
+0.29637665
+0.32126758
+0.3466755
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-5000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-5000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:41:58 test...
+mse per seq: 779.375354605985
+33.38166814444055
+45.34937431917612
+56.13851251563872
+67.08782974304444
+76.787592355506
+85.44078799328172
+93.71624679259028
+101.03127874045008
+107.33664458248032
+113.10541941937673
+ssim per frame: 0.7952882
+0.90098757
+0.8686607
+0.8409687
+0.8153306
+0.7937875
+0.7758819
+0.7594009
+0.7448666
+0.73206687
+0.72093016
+psnr per frame: 17.720167
+21.151627
+19.826225
+18.884197
+18.105236
+17.507534
+17.03564
+16.62209
+16.283281
+16.009153
+15.776693
+lpips per frame: 0.20425932
+0.10706088
+0.13459909
+0.15744072
+0.17736706
+0.19663183
+0.2150036
+0.2347136
+0.25440773
+0.27315775
+0.29221106
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-5500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-5500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:43:05 test...
+mse per seq: 752.4951231776471
+33.056724119377904
+45.391230387860034
+56.2395248872688
+66.79309221443881
+75.69272509348919
+83.3887327416355
+89.79155623960686
+95.70172707431287
+100.87957509358723
+105.5602353260699
+ssim per frame: 0.76371956
+0.89798206
+0.8593743
+0.82558566
+0.794287
+0.7665355
+0.74125445
+0.7188589
+0.6976545
+0.6773626
+0.6583003
+psnr per frame: 17.832401
+21.202217
+19.830898
+18.88047
+18.12223
+17.56115
+17.124216
+16.784258
+16.503485
+16.26021
+16.054888
+lpips per frame: 0.22606722
+0.106361076
+0.13633217
+0.16248699
+0.18603355
+0.21065228
+0.23504427
+0.2620399
+0.29082984
+0.32039088
+0.35050097
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-6000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-6000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:44:14 test...
+mse per seq: 749.7147847830531
+32.31882263857677
+44.036363379543566
+54.41021049836553
+64.9669154982969
+73.87192886229978
+81.92911506560911
+89.53523527091765
+96.53974188379495
+103.12578484715227
+108.98066683849656
+ssim per frame: 0.77805537
+0.9003584
+0.8661366
+0.83605605
+0.80786985
+0.7829811
+0.76023126
+0.7381116
+0.717117
+0.6960192
+0.67567235
+psnr per frame: 17.906471
+21.310669
+19.972904
+19.04244
+18.269999
+17.698526
+17.235842
+16.837467
+16.511862
+16.214096
+15.970918
+lpips per frame: 0.20411715
+0.10521385
+0.13407919
+0.15777817
+0.17760223
+0.19712417
+0.21472326
+0.23399086
+0.2538318
+0.27390513
+0.29292282
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-6500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-6500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:45:23 test...
+mse per seq: 767.5450135502949
+31.70281008065465
+43.465092655166565
+54.361730414700794
+65.54895908095271
+75.69328980656513
+84.51338888267915
+92.82463574696736
+100.38969887116826
+106.62123015989741
+112.4241778515429
+ssim per frame: 0.7777891
+0.9039393
+0.86958253
+0.838255
+0.8078739
+0.7808567
+0.7567275
+0.73453563
+0.7137075
+0.69502
+0.6773927
+psnr per frame: 17.799372
+21.382757
+20.013077
+19.026743
+18.192585
+17.561367
+17.05958
+16.6477
+16.295773
+16.022871
+15.7912445
+lpips per frame: 0.21023563
+0.09968958
+0.12811601
+0.15373188
+0.17626081
+0.19880448
+0.22081098
+0.24417147
+0.2689924
+0.2936906
+0.31808805
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-7000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-7000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:46:31 test...
+mse per seq: 723.5089562121166
+31.337906802993224
+42.87708041179611
+53.353752044310056
+63.595460209980544
+72.46806552994204
+79.87278343108763
+86.68265787760417
+92.70764543157983
+98.1176091695885
+102.49599530323442
+ssim per frame: 0.74856055
+0.90048915
+0.86218166
+0.8256915
+0.79063654
+0.7578309
+0.7272418
+0.69719374
+0.66830313
+0.6409445
+0.6150927
+psnr per frame: 18.013128
+21.436922
+20.084688
+19.10946
+18.32903
+17.737595
+17.30397
+16.936316
+16.634035
+16.377918
+16.181347
+lpips per frame: 0.2326186
+0.10017639
+0.13267832
+0.16264601
+0.18989268
+0.2176203
+0.24479613
+0.27473012
+0.30484444
+0.33436304
+0.36443862
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-7500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-7500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:47:39 test...
+mse per seq: 718.6029655272702
+30.138381467765594
+40.800192101413465
+50.75953279058617
+61.03585142878644
+70.40921424957644
+78.59376680611607
+86.60239191323399
+94.02534996553597
+100.23506146166699
+106.00322334258911
+ssim per frame: 0.78687954
+0.9082754
+0.87613845
+0.84648013
+0.8178655
+0.79168326
+0.7682558
+0.7453532
+0.7240458
+0.70463973
+0.68605816
+psnr per frame: 18.106781
+21.61156
+20.318192
+19.344746
+18.535921
+17.90072
+17.404818
+16.97081
+16.60163
+16.316273
+16.063143
+lpips per frame: 0.19548543
+0.09225855
+0.11909551
+0.1426386
+0.16326962
+0.18410364
+0.20453927
+0.22773491
+0.25010437
+0.27391726
+0.2971926
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-8000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-8000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:48:46 test...
+mse per seq: 695.399470386735
+29.546904766894727
+39.530610119003846
+48.71147477483175
+58.47522424598296
+66.95401578543176
+75.34569258479229
+83.50467053761923
+91.30641385733364
+98.18868673853127
+103.83577697631345
+ssim per frame: 0.82028544
+0.9138133
+0.8878658
+0.86495453
+0.84263057
+0.8237028
+0.8060563
+0.78883666
+0.77260476
+0.7577104
+0.7446787
+psnr per frame: 18.3047
+21.726126
+20.48643
+19.571941
+18.778194
+18.169804
+17.650023
+17.19049
+16.794565
+16.464243
+16.215189
+lpips per frame: 0.16367492
+0.088852786
+0.11147303
+0.13040552
+0.14580959
+0.15968512
+0.1727324
+0.18628803
+0.20022552
+0.213957
+0.22732024
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-8500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-8500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:49:56 test...
+mse per seq: 712.782238044892
+29.9696428919413
+40.503974363028284
+50.491642963455384
+60.94918343724017
+70.05963683224107
+78.07131283924761
+85.89461312045056
+93.03193670678809
+99.05108296344558
+104.75921192705393
+ssim per frame: 0.8085079
+0.91133285
+0.88224345
+0.8558749
+0.83089745
+0.80959404
+0.7912544
+0.773488
+0.7575994
+0.7429328
+0.7298618
+psnr per frame: 18.178873
+21.663483
+20.374643
+19.407988
+18.57836
+17.957779
+17.478472
+17.050983
+16.702995
+16.41418
+16.159832
+lpips per frame: 0.17339596
+0.088187434
+0.11284445
+0.13493197
+0.15216567
+0.16878048
+0.18371528
+0.19932394
+0.21530512
+0.23110794
+0.24759747
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-9000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-9000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:51:05 test...
+mse per seq: 678.2601853336197
+28.74318626894051
+38.57970313566277
+47.11732440779966
+57.08525954097151
+65.8014543066063
+73.52480106277159
+81.68921344251518
+88.68415680850845
+95.45046604876538
+101.5846203110783
+ssim per frame: 0.8336258
+0.91728646
+0.89315873
+0.87294364
+0.85188913
+0.8346008
+0.8201902
+0.80530024
+0.79220694
+0.7798674
+0.76881456
+psnr per frame: 18.42265
+21.843977
+20.593561
+19.713053
+18.86978
+18.25272
+17.765503
+17.301355
+16.945368
+16.611904
+16.329277
+lpips per frame: 0.14649293
+0.08209365
+0.10238303
+0.11957189
+0.1323164
+0.14446364
+0.15432769
+0.16620839
+0.1770064
+0.18830425
+0.19825417
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-9500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-9500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:52:13 test...
+mse per seq: 647.7449613594147
+28.708772061819054
+38.318416074576625
+46.75642261734928
+55.74822749861752
+63.66852339779038
+70.60818381864861
+77.33382379003318
+83.32617405044985
+89.09669902142751
+94.1797190287027
+ssim per frame: 0.8135559
+0.9157343
+0.8884756
+0.8639114
+0.8394158
+0.81759244
+0.7980796
+0.7787862
+0.7612391
+0.74391156
+0.72841287
+psnr per frame: 18.533161
+21.840796
+20.596888
+19.713284
+18.944374
+18.337954
+17.875437
+17.46558
+17.14107
+16.829576
+16.58666
+lpips per frame: 0.1807488
+0.08479508
+0.11000213
+0.13253981
+0.1522251
+0.17163198
+0.19075412
+0.21066067
+0.23152429
+0.25124845
+0.27210638
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-10000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-10000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:53:22 test...
+mse per seq: 664.9323735217971
+28.868801132263428
+38.75190967728335
+47.704992853494055
+57.04648239258303
+65.70019633894465
+72.61374028523763
+79.78055417777065
+86.21217075026179
+91.87596819774214
+96.37755771621643
+ssim per frame: 0.8181695
+0.9166912
+0.89044577
+0.86623424
+0.84238327
+0.82086146
+0.80290234
+0.7845851
+0.7675515
+0.7517494
+0.73829013
+psnr per frame: 18.441685
+21.842897
+20.566265
+19.635138
+18.851585
+18.21094
+17.77479
+17.34324
+16.99912
+16.70501
+16.487865
+lpips per frame: 0.17011894
+0.08224049
+0.10514908
+0.12596717
+0.14352585
+0.1612084
+0.17866497
+0.19737974
+0.21616693
+0.23565605
+0.25523067
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-10500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-10500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:54:30 test...
+mse per seq: 662.9360655129674
+28.165787639388117
+37.562740900430335
+46.54349359259548
+56.14551354220593
+64.92512363602359
+72.3810561000104
+79.6615288516125
+86.48674761913867
+92.70555569752153
+98.35851793404085
+ssim per frame: 0.82227266
+0.9197227
+0.8946333
+0.870834
+0.84707147
+0.8260698
+0.8075332
+0.78914714
+0.7717951
+0.755512
+0.74040806
+psnr per frame: 18.485508
+21.936228
+20.696417
+19.757124
+18.929728
+18.277294
+17.795593
+17.363708
+16.996496
+16.680883
+16.421618
+lpips per frame: 0.16796558
+0.07949544
+0.102141626
+0.12286331
+0.14093435
+0.15958779
+0.17662272
+0.19566569
+0.214937
+0.2337796
+0.25362834
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-11000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-11000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:55:37 test...
+mse per seq: 641.652934982116
+27.785341247497314
+37.17831692829668
+45.67268429798295
+54.447381061722474
+62.36596750159819
+69.83791602567497
+77.07086417569693
+83.68589623386123
+89.29549518263484
+94.3130723271504
+ssim per frame: 0.8179488
+0.91949165
+0.89397985
+0.87046987
+0.8469038
+0.8252989
+0.80455416
+0.7835659
+0.7636626
+0.74471426
+0.72684723
+psnr per frame: 18.625675
+22.011406
+20.756865
+19.857933
+19.082775
+18.464043
+17.97028
+17.521347
+17.148348
+16.843266
+16.600485
+lpips per frame: 0.16774327
+0.07774822
+0.099890955
+0.120567046
+0.13853976
+0.15716313
+0.17484182
+0.1952669
+0.21631841
+0.23700446
+0.2600919
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-11500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-11500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:56:46 test...
+mse per seq: 664.70955219039
+28.01084726019557
+37.616149588282326
+46.91307218773777
+56.39798731976245
+65.04933508141453
+72.60085360975151
+79.72375479089209
+86.74988606464431
+93.27548141173091
+98.37218487597852
+ssim per frame: 0.8188779
+0.91884243
+0.89286685
+0.8682689
+0.84453505
+0.82311505
+0.8039792
+0.7852854
+0.76711816
+0.7497477
+0.73502004
+psnr per frame: 18.490421
+21.96201
+20.715168
+19.728546
+18.92315
+18.290148
+17.802784
+17.378447
+17.003668
+16.670134
+16.430153
+lpips per frame: 0.1690805
+0.079655774
+0.10294975
+0.12497496
+0.14327721
+0.16143027
+0.1788617
+0.19739419
+0.21602997
+0.23376398
+0.25246722
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-12000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-12000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:57:53 test...
+mse per seq: 663.3308220445871
+27.29452320083557
+36.242082526884886
+45.36272970452366
+54.659938858216066
+63.34733743935704
+71.67436345418294
+79.85319754972036
+88.03137112046821
+94.94383665644021
+101.9214415339581
+ssim per frame: 0.8379181
+0.9222268
+0.8999404
+0.87882495
+0.85890955
+0.8413231
+0.8252495
+0.8095282
+0.7942394
+0.7807495
+0.76818925
+psnr per frame: 18.555845
+22.082645
+20.88305
+19.897589
+19.087378
+18.42664
+17.875048
+17.401566
+16.967173
+16.629133
+16.308226
+lpips per frame: 0.14753856
+0.07705323
+0.09782904
+0.11662043
+0.13098441
+0.14449455
+0.15682428
+0.16975711
+0.18210694
+0.19380252
+0.20591304
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-12500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-12500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 15:59:02 test...
+mse per seq: 635.2708885775033
+27.619767254136175
+36.70125008395398
+45.44511933690573
+54.15281746186406
+62.13099495761366
+69.0290649751104
+75.92009483858284
+82.44984785332737
+88.44416418420263
+93.37776763180652
+ssim per frame: 0.8266527
+0.9212282
+0.8968838
+0.8735018
+0.8509862
+0.8307502
+0.8126963
+0.79468703
+0.7775389
+0.76115173
+0.7471035
+psnr per frame: 18.66885
+22.046442
+20.82913
+19.87924
+19.104733
+18.483847
+18.010271
+17.583467
+17.213013
+16.89272
+16.645643
+lpips per frame: 0.16354269
+0.07553711
+0.09766199
+0.118713096
+0.13687557
+0.15482041
+0.1727596
+0.19075358
+0.21028367
+0.22942276
+0.24859901
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-13000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-13000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:00:10 test...
+mse per seq: 650.2328913125647
+27.10886793634499
+36.63153205626461
+45.29090390339434
+54.662845718812754
+62.94121295668514
+70.46577982155674
+78.33328481467373
+85.5166908019039
+91.68353495157388
+97.59823835135464
+ssim per frame: 0.81970376
+0.9215083
+0.8959268
+0.8722285
+0.8481506
+0.8267032
+0.8064686
+0.7854509
+0.765418
+0.7467351
+0.7284477
+psnr per frame: 18.59107
+22.114029
+20.820398
+19.887486
+19.047316
+18.423716
+17.918634
+17.449112
+17.058945
+16.737411
+16.453667
+lpips per frame: 0.1637659
+0.07550642
+0.09822384
+0.11973004
+0.1376107
+0.15554833
+0.17278875
+0.19171396
+0.21031807
+0.2282223
+0.24799672
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-13500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-13500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:01:18 test...
+mse per seq: 628.9696729575774
+26.824976488289582
+35.40303211901561
+43.559109806535716
+51.99946819443301
+60.65871472339553
+68.42483580256084
+75.07134058389319
+82.64301637090354
+89.29358538279092
+95.09159348575945
+ssim per frame: 0.842896
+0.9253219
+0.90406805
+0.8842519
+0.86501914
+0.84654605
+0.83029264
+0.8156175
+0.7997638
+0.785581
+0.7724978
+psnr per frame: 18.764427
+22.165539
+20.994894
+20.08028
+19.295942
+18.62763
+18.09401
+17.663157
+17.233763
+16.886272
+16.602777
+lpips per frame: 0.13718292
+0.06986037
+0.088680394
+0.105070405
+0.11840611
+0.13190101
+0.14401184
+0.15770304
+0.17164344
+0.18507501
+0.19947766
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-14000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-14000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:02:29 test...
+mse per seq: 609.3895054169927
+26.583337171010704
+35.38455540300852
+43.40932101513966
+51.493345881082924
+59.20432238597947
+66.2237069616356
+72.82904988790612
+79.29511558195674
+85.044628465032
+89.92212266424094
+ssim per frame: 0.8293897
+0.92380893
+0.90024894
+0.8782542
+0.8565936
+0.8362411
+0.8172849
+0.79837066
+0.779081
+0.76055485
+0.74345803
+psnr per frame: 18.858162
+22.210424
+20.992197
+20.083836
+19.32303
+18.703117
+18.204664
+17.777563
+17.398932
+17.070883
+16.816986
+lpips per frame: 0.15072629
+0.069977805
+0.08974154
+0.108677514
+0.124515004
+0.14095041
+0.15729702
+0.17480002
+0.19431676
+0.21322012
+0.23376663
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-14500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-14500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:03:38 test...
+mse per seq: 633.8125523946371
+26.603176913586964
+35.45833206942761
+43.819818374143544
+52.639311074253065
+61.10102655801428
+68.55273184718855
+76.15255924209534
+83.36742143745882
+89.88561573564768
+96.23255914282129
+ssim per frame: 0.83695364
+0.9243863
+0.9017975
+0.8808358
+0.8601702
+0.8412782
+0.82455736
+0.80770445
+0.7915321
+0.7759371
+0.7613376
+psnr per frame: 18.746393
+22.213884
+20.982748
+20.057459
+19.251713
+18.585957
+18.092018
+17.618626
+17.217794
+16.873947
+16.56978
+lpips per frame: 0.14710084
+0.07132613
+0.09162458
+0.11082531
+0.12649567
+0.14166708
+0.15560786
+0.17072514
+0.18574479
+0.20058623
+0.21640548
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-15000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-15000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:04:46 test...
+mse per seq: 616.6556142784027
+26.17220676376159
+34.74339665945275
+43.07567360506479
+51.38132364970134
+59.54202403792416
+66.92176561470491
+74.08156299208062
+80.920583594755
+87.07452631571206
+92.74255104524543
+ssim per frame: 0.8413706
+0.9264067
+0.90462565
+0.8838259
+0.86394507
+0.8453926
+0.8287802
+0.8125786
+0.79682124
+0.7824831
+0.7688465
+psnr per frame: 18.840084
+22.27659
+21.070429
+20.116215
+19.345287
+18.688042
+18.172308
+17.712639
+17.31926
+16.990587
+16.709486
+lpips per frame: 0.1420262
+0.067697
+0.08694668
+0.104954824
+0.1198862
+0.1353191
+0.15022351
+0.16548768
+0.18099256
+0.19618054
+0.2125739
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-15500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-15500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:05:55 test...
+mse per seq: 615.2491759258102
+26.178803409438537
+34.6308398878718
+42.66429203293888
+51.10243549883126
+59.22828783088899
+65.8793390113187
+73.47419020258279
+80.97093713905916
+87.37326622775281
+93.74678468512722
+ssim per frame: 0.83652383
+0.9256749
+0.90353364
+0.88243216
+0.8615423
+0.8421322
+0.8251895
+0.80704343
+0.7889957
+0.772525
+0.7561689
+psnr per frame: 18.850111
+22.275143
+21.085083
+20.152721
+19.3711
+18.699213
+18.22985
+17.747602
+17.316128
+16.972458
+16.65182
+lpips per frame: 0.14605144
+0.06816942
+0.08834205
+0.1077432
+0.12377291
+0.13970655
+0.1549097
+0.17044978
+0.1863646
+0.20213817
+0.2189179
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-16000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-16000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:07:04 test...
+mse per seq: 619.3202215141082
+26.21566630750296
+34.75850165799918
+42.97775721262737
+51.73805082083706
+59.58062905001353
+67.49832759995058
+74.62859206601797
+81.35992528157063
+87.39683980060869
+93.16593171698023
+ssim per frame: 0.835271
+0.92538273
+0.9031888
+0.8821136
+0.8608852
+0.84175545
+0.8228219
+0.804841
+0.7873371
+0.77037483
+0.754009
+psnr per frame: 18.832062
+22.289124
+21.075245
+20.132393
+19.322172
+18.69519
+18.146643
+17.696283
+17.306494
+16.971006
+16.686064
+lpips per frame: 0.14573659
+0.068092585
+0.087867096
+0.10609507
+0.121916324
+0.13793552
+0.15314898
+0.16954207
+0.1869857
+0.20379525
+0.22198738
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-16500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-16500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:08:12 test...
+mse per seq: 598.0697162812015
+26.00519354946642
+34.346361236878664
+42.47370579731034
+50.80074831185092
+58.16566376896747
+64.86818070009531
+71.72504091071316
+77.79403136532949
+83.41398240667749
+88.47680823391221
+ssim per frame: 0.8303114
+0.9258952
+0.90283537
+0.8802105
+0.8578865
+0.83737236
+0.8180532
+0.7981005
+0.77922493
+0.7605707
+0.7429643
+psnr per frame: 18.931068
+22.313473
+21.110086
+20.170565
+19.382421
+18.766613
+18.280045
+17.825329
+17.45762
+17.136942
+16.867584
+lpips per frame: 0.16239771
+0.06805225
+0.090316035
+0.11304585
+0.13250116
+0.15258387
+0.17190552
+0.1925236
+0.21343476
+0.23356043
+0.25605366
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-17000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-17000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:09:20 test...
+mse per seq: 608.0539644693275
+25.67495019751859
+34.011868970939915
+42.00832430521647
+50.46756258738568
+58.604300763233596
+65.87794918994827
+73.23456758859167
+80.12409292933452
+86.25582986854646
+91.79451806861233
+ssim per frame: 0.8410751
+0.92732316
+0.90568787
+0.8852667
+0.8652644
+0.8462681
+0.8294417
+0.812114
+0.7952867
+0.77930135
+0.76479757
+psnr per frame: 18.929901
+22.37854
+21.190048
+20.24503
+19.448324
+18.779581
+18.267776
+17.790508
+17.38358
+17.044485
+16.771141
+lpips per frame: 0.13501291
+0.06524561
+0.083612375
+0.1009943
+0.114979304
+0.12939367
+0.14250402
+0.15653911
+0.17094988
+0.18520194
+0.20070893
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-17500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-17500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:10:29 test...
+mse per seq: 617.3389888441707
+25.583884082166065
+34.14616151985873
+42.26523463697318
+51.124545254381786
+59.2806969608169
+66.66139743605771
+74.14279619086699
+81.39380978197458
+88.16641667377517
+94.57404630729951
+ssim per frame: 0.842502
+0.9280598
+0.906883
+0.8868573
+0.8666395
+0.84838414
+0.8315962
+0.81421244
+0.797053
+0.78049356
+0.76484144
+psnr per frame: 18.886913
+22.40206
+21.174702
+20.241688
+19.400291
+18.74071
+18.223492
+17.750042
+17.321434
+16.961605
+16.653114
+lpips per frame: 0.13295832
+0.06479742
+0.08241968
+0.09921322
+0.112903535
+0.12670818
+0.13992925
+0.1535748
+0.16867639
+0.18281612
+0.19854458
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-18000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-18000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:11:39 test...
+mse per seq: 618.1576131491297
+25.526651773108057
+34.01074800146631
+42.110078198842736
+50.90281717078274
+59.08792803660933
+66.59879701300318
+74.18298974094621
+81.76719267205542
+88.56276414863555
+95.4076463936802
+ssim per frame: 0.8512846
+0.9294193
+0.9094054
+0.8906561
+0.8718226
+0.8553636
+0.8405168
+0.8253649
+0.8106042
+0.7965135
+0.7831797
+psnr per frame: 18.899252
+22.406271
+21.191822
+20.265045
+19.436504
+18.776426
+18.247795
+17.761272
+17.32739
+16.957445
+16.622553
+lpips per frame: 0.12439586
+0.06382047
+0.08045605
+0.096382454
+0.10876336
+0.12043733
+0.13160816
+0.14333993
+0.15487914
+0.16601561
+0.17825602
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-18500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-18500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:12:46 test...
+mse per seq: 576.522954312673
+25.524578990706477
+33.450408920226806
+40.79765954075089
+48.63111292214757
+56.11420869635769
+62.36684506581012
+68.65790444492815
+74.69375109385295
+80.55252409172824
+85.73396054616416
+ssim per frame: 0.8425642
+0.9288339
+0.9080752
+0.8881868
+0.8679817
+0.8487461
+0.83172286
+0.813961
+0.7966364
+0.7790534
+0.76244545
+psnr per frame: 19.112835
+22.421324
+21.256578
+20.37025
+19.593231
+18.95171
+18.47918
+18.038946
+17.666914
+17.315691
+17.034512
+lpips per frame: 0.1390424
+0.06294622
+0.08151296
+0.099449486
+0.11502673
+0.13091636
+0.14629416
+0.16255681
+0.1798466
+0.19661428
+0.2152604
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-19000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-19000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:13:54 test...
+mse per seq: 624.5321972092471
+25.45906074554566
+33.98470309460498
+42.0046488137609
+50.6798166175444
+59.2458895334757
+67.18772613954353
+75.22063832110669
+83.02538255132346
+90.44255762981123
+97.28177376253059
+ssim per frame: 0.85043496
+0.92924464
+0.909034
+0.8904737
+0.87208825
+0.8547978
+0.8395309
+0.82387227
+0.80905885
+0.7945955
+0.7816536
+psnr per frame: 18.89011
+22.43375
+21.209572
+20.287374
+19.48065
+18.767666
+18.231028
+17.72057
+17.290318
+16.908144
+16.572035
+lpips per frame: 0.123215556
+0.06246989
+0.07851721
+0.09404612
+0.10681351
+0.119404994
+0.13011317
+0.1421283
+0.15387046
+0.16619201
+0.17859982
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-19500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-19500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:15:02 test...
+mse per seq: 603.1125151316324
+25.22623467349623
+33.296596573059816
+41.255322559770335
+49.75723311029763
+57.710351400107264
+65.66081162724629
+72.62680421392602
+79.7277729080384
+85.91050913247717
+91.94087893321333
+ssim per frame: 0.8395335
+0.92914766
+0.9083211
+0.8876654
+0.8668027
+0.84740764
+0.82808006
+0.8097487
+0.79089046
+0.7727627
+0.7545087
+psnr per frame: 18.970379
+22.46026
+21.284233
+20.334177
+19.506548
+18.846975
+18.272505
+17.816544
+17.3923
+17.045631
+16.744625
+lpips per frame: 0.13765101
+0.06302218
+0.08139711
+0.099458575
+0.114587754
+0.1304635
+0.14589009
+0.16121307
+0.17741449
+0.19279282
+0.21027058
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-20000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-20000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:16:09 test...
+mse per seq: 597.5768437136608
+24.965264431444037
+32.72490913513674
+40.369717984793176
+48.58245183186359
+56.255933110493736
+63.84057033492858
+71.77478647806558
+79.41851229074011
+86.4072632847062
+93.23743483148904
+ssim per frame: 0.8581215
+0.9313604
+0.9129873
+0.89556235
+0.87811893
+0.8627806
+0.8484068
+0.833582
+0.8194447
+0.8057753
+0.79319715
+psnr per frame: 19.096336
+22.525646
+21.399261
+20.496473
+19.694117
+19.02005
+18.478617
+17.953533
+17.500479
+17.119719
+16.775461
+lpips per frame: 0.11088629
+0.059670486
+0.07409634
+0.08800989
+0.09865639
+0.10847764
+0.11721955
+0.12679964
+0.13598156
+0.14505981
+0.1548915
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-20500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-20500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:17:18 test...
+mse per seq: 608.7886079612027
+25.120056979627496
+33.26144746221213
+41.209278436070946
+49.95591260917694
+58.27458394674891
+65.8319153230353
+73.58736534578254
+80.73159883491485
+87.48251161996619
+93.3339374036674
+ssim per frame: 0.84604615
+0.93049365
+0.91053283
+0.890957
+0.87081456
+0.8521476
+0.8350035
+0.8172872
+0.80049473
+0.7839232
+0.7688073
+psnr per frame: 18.963804
+22.486383
+21.292116
+20.357237
+19.517057
+18.825111
+18.288296
+17.794004
+17.365955
+16.998795
+16.71311
+lpips per frame: 0.13317814
+0.06197878
+0.0788716
+0.09641592
+0.11106917
+0.12566654
+0.1400394
+0.15534416
+0.17103067
+0.18653041
+0.2048347
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-21000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-21000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:18:26 test...
+mse per seq: 581.7848819747986
+24.95255741441106
+32.90969859356861
+40.425088514764624
+48.434062712642564
+55.95479274274834
+62.82101337785223
+69.92984552651524
+76.46197653774277
+82.28316686239587
+87.6126796921573
+ssim per frame: 0.8417557
+0.92996335
+0.90950394
+0.88961256
+0.86936045
+0.8503015
+0.8321552
+0.8126282
+0.79368603
+0.7747621
+0.75558406
+psnr per frame: 19.1081
+22.51795
+21.333033
+20.419943
+19.628464
+18.971884
+18.458809
+17.974943
+17.574621
+17.24755
+16.953823
+lpips per frame: 0.13442288
+0.060468733
+0.077600285
+0.09499869
+0.109598234
+0.124734886
+0.14027703
+0.15728423
+0.17436162
+0.1926179
+0.2122873
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-21500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-21500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:19:35 test...
+mse per seq: 571.0763755476619
+24.552900176450432
+32.15095517721521
+39.59262586693208
+47.48269731452666
+54.80708073995199
+61.64335108377848
+68.34972761529517
+75.12593631667784
+80.85507983471973
+86.51602142211424
+ssim per frame: 0.85667914
+0.9321419
+0.9136551
+0.8955828
+0.8775047
+0.8613546
+0.8464403
+0.83138007
+0.8164645
+0.8028459
+0.78942144
+psnr per frame: 19.211224
+22.578604
+21.44789
+20.526014
+19.72622
+19.08503
+18.568253
+18.108894
+17.688942
+17.342995
+17.039385
+lpips per frame: 0.122845255
+0.059483476
+0.07506938
+0.091243155
+0.10417294
+0.117040075
+0.12951756
+0.14293817
+0.15647487
+0.16905057
+0.1834624
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-22000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-22000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:20:43 test...
+mse per seq: 627.7426541952723
+25.025764710453142
+33.271671456026745
+41.51640168921536
+50.53261691786678
+59.288072900120994
+67.88651923673699
+76.01440135542168
+84.51611631462373
+91.59868661658352
+98.09240299822336
+ssim per frame: 0.85294294
+0.9314011
+0.9118694
+0.89293283
+0.8742155
+0.8570053
+0.8411487
+0.8259402
+0.81070685
+0.79800373
+0.78620607
+psnr per frame: 18.878727
+22.506807
+21.315863
+20.330536
+19.487791
+18.761152
+18.16618
+17.657228
+17.203897
+16.83771
+16.52013
+lpips per frame: 0.11579684
+0.058836546
+0.074443124
+0.08968643
+0.101396956
+0.11258686
+0.1228248
+0.13357751
+0.14468563
+0.15398642
+0.16594411
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-22500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-22500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:21:52 test...
+mse per seq: 571.3555454652472
+24.59408140373996
+32.14728021430203
+39.68346256424624
+47.71102960425687
+54.83035253808202
+61.50704367764025
+68.69406722348378
+74.93322285112129
+80.7831751965136
+86.4718301918612
+ssim per frame: 0.8548933
+0.93169516
+0.9130124
+0.8946299
+0.87624496
+0.86015075
+0.84506583
+0.82886714
+0.81417817
+0.7996039
+0.78548485
+psnr per frame: 19.219358
+22.579042
+21.459463
+20.535524
+19.721174
+19.088224
+18.5823
+18.092258
+17.717192
+17.362225
+17.056181
+lpips per frame: 0.12612951
+0.05972931
+0.07638779
+0.0934199
+0.107493475
+0.12139215
+0.13412589
+0.14735943
+0.16069937
+0.17354299
+0.18714477
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-23000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-23000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:23:00 test...
+mse per seq: 600.2727709391031
+24.704181043019734
+32.7277028034011
+40.43979229601511
+49.07190024134624
+56.80168308120176
+64.45191702785262
+72.35327110137327
+79.67437632304119
+86.54530216508122
+93.50264485677083
+ssim per frame: 0.8557601
+0.93186444
+0.91294056
+0.8949583
+0.87652487
+0.86059237
+0.8454527
+0.8299621
+0.8155497
+0.8017292
+0.7880267
+psnr per frame: 19.056608
+22.563524
+21.394186
+20.464931
+19.61266
+18.957968
+18.400057
+17.893656
+17.45806
+17.08316
+16.737879
+lpips per frame: 0.1177294
+0.058553442
+0.07417705
+0.089984775
+0.102074414
+0.11449927
+0.12487536
+0.13697007
+0.14782222
+0.15842019
+0.16991726
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-23500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-23500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:24:08 test...
+mse per seq: 584.6758506805543
+24.66961843804662
+32.694162782416285
+40.5493662730757
+48.69488703103429
+56.52027718417616
+63.62711928647206
+70.40032291029351
+76.93969896615269
+82.63263942917666
+87.94775837971025
+ssim per frame: 0.847902
+0.931691
+0.91125125
+0.8911364
+0.8713845
+0.8530379
+0.8360923
+0.81944835
+0.8033585
+0.7881009
+0.77351975
+psnr per frame: 19.099302
+22.56364
+21.353262
+20.404284
+19.603569
+18.93522
+18.417076
+17.965055
+17.564568
+17.238073
+16.948286
+lpips per frame: 0.13155049
+0.058168676
+0.075828895
+0.09415664
+0.10949003
+0.12494944
+0.13970393
+0.15510343
+0.17055218
+0.18589936
+0.20165224
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-24000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-24000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:25:15 test...
+mse per seq: 574.1142616961375
+24.40863673658256
+31.865273885458826
+39.407955636939846
+47.00403715233247
+54.489360686765615
+61.33753844724602
+68.52146700204136
+75.76665738883267
+82.67653334284404
+88.63680141709416
+ssim per frame: 0.86319846
+0.9332181
+0.9158886
+0.89887965
+0.8830015
+0.8681249
+0.8545744
+0.84031427
+0.82623154
+0.8121795
+0.79957205
+psnr per frame: 19.261106
+22.630512
+21.512028
+20.593086
+19.827982
+19.170132
+18.655794
+18.160236
+17.714746
+17.329863
+17.01668
+lpips per frame: 0.10608764
+0.05570959
+0.069298215
+0.08267392
+0.0927146
+0.10238614
+0.11179044
+0.12217386
+0.13161793
+0.14102711
+0.15148452
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-24500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-24500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:26:23 test...
+mse per seq: 572.8310999238347
+24.493555815823107
+32.28552944688912
+39.466146331235585
+47.378442404260596
+54.79203220352112
+61.747021993001304
+68.29107096109045
+74.96771221850292
+81.7347761406956
+87.67481240881494
+ssim per frame: 0.858947
+0.9329513
+0.91428435
+0.89697254
+0.87938124
+0.86347973
+0.8488055
+0.8345779
+0.82047576
+0.8058073
+0.792734
+psnr per frame: 19.236034
+22.616018
+21.446426
+20.563662
+19.771742
+19.115892
+18.586658
+18.140694
+17.741022
+17.344055
+17.034166
+lpips per frame: 0.11847506
+0.056637675
+0.07231632
+0.088001326
+0.10130451
+0.114307
+0.1259966
+0.13846655
+0.15030874
+0.1621572
+0.17525461
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-25000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-25000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:27:32 test...
+mse per seq: 553.7931474356287
+24.33013785029032
+31.802383622012464
+38.988374756043214
+46.31703903780405
+53.38482721167875
+59.600841981818874
+66.2200755843197
+72.20918393422322
+77.90668761778069
+83.03359583965745
+ssim per frame: 0.85153276
+0.93308437
+0.91427994
+0.89557576
+0.87702936
+0.8591181
+0.8424734
+0.8244669
+0.8071839
+0.7895903
+0.7725255
+psnr per frame: 19.31443
+22.633371
+21.496428
+20.59178
+19.82495
+19.189816
+18.695333
+18.216858
+17.829256
+17.482183
+17.184343
+lpips per frame: 0.12672602
+0.056066427
+0.071548775
+0.088084966
+0.102418594
+0.11761845
+0.13230865
+0.14893067
+0.16566774
+0.18256575
+0.20205025
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-25500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-25500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:28:41 test...
+mse per seq: 571.79282513201
+23.91834099704482
+31.202850579257948
+38.61396492341436
+46.29714049680166
+53.78394682244603
+61.205435082615615
+68.63295436384209
+76.14050594774116
+82.84923607087039
+89.14844984797588
+ssim per frame: 0.8681879
+0.9356749
+0.91950196
+0.90339714
+0.8877905
+0.8731871
+0.85944754
+0.8454702
+0.8316202
+0.81870914
+0.80708045
+psnr per frame: 19.279938
+22.716213
+21.606627
+20.66581
+19.893509
+19.21129
+18.659815
+18.135452
+17.674074
+17.285389
+16.951199
+lpips per frame: 0.097508766
+0.052136734
+0.06373166
+0.07565404
+0.08440197
+0.09375117
+0.10233785
+0.11183767
+0.120881155
+0.13053477
+0.13982056
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-26000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-26000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:29:49 test...
+mse per seq: 586.1132064267813
+24.123263033518352
+31.504223406075475
+38.93612782734944
+47.018302802579946
+54.69280396120615
+62.39261726777716
+70.54452926758303
+78.14902533106057
+85.82614766929045
+92.92616586034077
+ssim per frame: 0.8699918
+0.9351808
+0.9190027
+0.9035941
+0.88819844
+0.8744309
+0.8614259
+0.8478014
+0.83544713
+0.82300115
+0.8118352
+psnr per frame: 19.23617
+22.699554
+21.596214
+20.670727
+19.865728
+19.188326
+18.618578
+18.07072
+17.623451
+17.195597
+16.8328
+lpips per frame: 0.096769646
+0.05386366
+0.06604794
+0.07802756
+0.08642111
+0.09511807
+0.101753466
+0.11034359
+0.118073225
+0.1252368
+0.13281102
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-26500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-26500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:30:58 test...
+mse per seq: 573.1918013086281
+23.840611844656458
+31.080375464565783
+38.3905042548735
+46.56408393430901
+54.64708890493615
+61.86391251345715
+68.93625429452183
+76.25980830671318
+82.61988789202219
+88.9892738985728
+ssim per frame: 0.84981805
+0.9337096
+0.91533524
+0.8966561
+0.87714356
+0.858039
+0.84033555
+0.82210696
+0.8032218
+0.78520525
+0.76642734
+psnr per frame: 19.25502
+22.732586
+21.623842
+20.688469
+19.849796
+19.132341
+18.581656
+18.100277
+17.636448
+17.271605
+16.93317
+lpips per frame: 0.12318693
+0.05400964
+0.06963096
+0.08617267
+0.100047536
+0.11580103
+0.1295243
+0.1453473
+0.16110961
+0.17640622
+0.19381998
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-27000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-27000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:32:06 test...
+mse per seq: 542.2545144797328
+23.508640067165636
+30.68531721950056
+37.889120255129406
+45.140113125843214
+52.139479089453516
+58.52516785587173
+64.9928717096168
+71.19160446105712
+76.30505780139602
+81.8771428946989
+ssim per frame: 0.8585247
+0.93500775
+0.91722393
+0.89925313
+0.881862
+0.8650937
+0.84958297
+0.8333047
+0.8169906
+0.80153424
+0.7853941
+psnr per frame: 19.435556
+22.789068
+21.666628
+20.729517
+19.963032
+19.310602
+18.788387
+18.327145
+17.918081
+17.588884
+17.274223
+lpips per frame: 0.11856192
+0.0536962
+0.068652295
+0.08487579
+0.097658485
+0.11183878
+0.12442924
+0.1390132
+0.15340325
+0.16780454
+0.18424739
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-27500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-27500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:33:16 test...
+mse per seq: 546.9926712694896
+23.296406849321112
+30.128826126037353
+37.275098701078726
+44.7700944080889
+51.975889091032094
+58.607437225709475
+65.33512144586648
+72.67612955177644
+78.29992513388515
+84.62774273669385
+ssim per frame: 0.86625445
+0.9363318
+0.92010933
+0.9035914
+0.88708913
+0.8718967
+0.8577518
+0.8433299
+0.82783335
+0.814453
+0.8001574
+psnr per frame: 19.464603
+22.840944
+21.762024
+20.834246
+20.033527
+19.37393
+18.829185
+18.359312
+17.873491
+17.547411
+17.191948
+lpips per frame: 0.10857457
+0.05256353
+0.06622861
+0.080586664
+0.09228745
+0.10391726
+0.11476196
+0.1262409
+0.13790081
+0.14955665
+0.16170184
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-28000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-28000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:34:26 test...
+mse per seq: 530.6547050629275
+23.025117031541694
+29.836033235113305
+36.70949453330902
+43.77775419763772
+50.283838218474486
+56.725197374581334
+63.246485576093434
+69.69551834045166
+75.63034083661306
+81.7249257191118
+ssim per frame: 0.8717313
+0.9374801
+0.9218814
+0.90624595
+0.89094913
+0.87740207
+0.863939
+0.85017174
+0.8366419
+0.8231689
+0.80943304
+psnr per frame: 19.594767
+22.892279
+21.815224
+20.906265
+20.152176
+19.520287
+19.000153
+18.500055
+18.084276
+17.720205
+17.35675
+lpips per frame: 0.0992369
+0.050056018
+0.06221993
+0.07464078
+0.08446869
+0.094702035
+0.10421224
+0.11487619
+0.12489833
+0.1353812
+0.14691354
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-28500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-28500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:35:35 test...
+mse per seq: 547.7047545689655
+23.199333470509234
+30.17944748047365
+37.27059825452935
+44.89259348336952
+51.83442007777202
+59.00455761338812
+65.65595632959082
+72.46742156614741
+78.61051009457753
+84.58991619860791
+ssim per frame: 0.8693841
+0.9375266
+0.92156947
+0.90563005
+0.8894559
+0.87488997
+0.86044884
+0.8465135
+0.8323985
+0.81909364
+0.80631435
+psnr per frame: 19.458353
+22.86308
+21.75759
+20.83888
+20.037676
+19.374472
+18.81887
+18.323349
+17.886671
+17.505518
+17.177408
+lpips per frame: 0.09811149
+0.048744395
+0.06042577
+0.07259759
+0.082419135
+0.092858575
+0.10277018
+0.1134189
+0.124453224
+0.13540402
+0.14802316
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-29000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-29000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:36:45 test...
+mse per seq: 533.0604611936822
+23.01316518285667
+29.732193146364757
+36.48199812188206
+43.61463143835106
+50.450052253692505
+56.82171053292761
+63.77263356404132
+70.26498575478672
+76.6347112540739
+82.27437994470559
+ssim per frame: 0.8726514
+0.9381845
+0.9228341
+0.90734875
+0.89211816
+0.8780928
+0.86507374
+0.8506824
+0.8375236
+0.8235514
+0.8111045
+psnr per frame: 19.585995
+22.907923
+21.846973
+20.936909
+20.166527
+19.511564
+18.997076
+18.480383
+18.049261
+17.63933
+17.32399
+lpips per frame: 0.09507161
+0.048630524
+0.059733238
+0.07153946
+0.08077763
+0.09082
+0.09933007
+0.109953225
+0.11953278
+0.12965351
+0.14074564
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-29500', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-29500
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:37:54 test...
+mse per seq: 534.8649011022115
+22.993723030549933
+29.977502347953827
+36.77722973804397
+44.05455227740797
+50.84988407916333
+57.27240181735242
+63.65343524366019
+70.37819120108364
+76.20583191837173
+82.70214944862458
+ssim per frame: 0.8725815
+0.938371
+0.9227282
+0.9075404
+0.89239115
+0.87832254
+0.864957
+0.8513967
+0.83725065
+0.82368517
+0.80917174
+psnr per frame: 19.591099
+22.928238
+21.829144
+20.940632
+20.149155
+19.497124
+18.981962
+18.51248
+18.06382
+17.68962
+17.318819
+lpips per frame: 0.093204334
+0.047682397
+0.058606617
+0.06978124
+0.07879093
+0.08828102
+0.097587
+0.107151024
+0.117450565
+0.12760238
+0.13911013
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/borroot/Sync/courses/applied_machine_learning/task8/venv/lib/python3.12/site-packages/lpips/weights/v0.1/alex.pth
+Namespace(is_training=0, device='cuda', dataset_name='mnist', train_data_paths='data/moving-mnist-example/moving-mnist-train.npz', valid_data_paths='data/moving-mnist-example/moving-mnist-valid.npz', save_dir='checkpoints/mnist_predrnn_v2', gen_frm_dir='results/mnist_predrnn_v2', input_length=10, total_length=20, img_width=64, img_channel=1, model_name='predrnn_v2', pretrained_model='./training_results/mnist_predrnn_v2_baseline/model.ckpt-30000', num_hidden='128,128,128,128', filter_size=5, stride=1, patch_size=4, layer_norm=0, decouple_beta=0.1, reverse_scheduled_sampling=1, r_sampling_step_1=25000.0, r_sampling_step_2=50000, r_exp_alpha=2500, scheduled_sampling=1, sampling_stop_iter=50000, sampling_start_value=1.0, sampling_changing_rate=2e-05, lr=0.0001, reverse_input=1, batch_size=8, max_iterations=30000, display_interval=100, test_interval=100000, snapshot_interval=500, num_save_samples=10, n_gpu=1, visual=0, visual_path='./decoupling_visual', injection_action='concat', conv_on_input=0, res_on_conv=0, num_action_ch=4)
+Initializing models
+load model: ./training_results/mnist_predrnn_v2_baseline/model.ckpt-30000
+clips
+(2, 2000, 2)
+dims
+(1, 3)
+input_raw_data
+(40000, 1, 64, 64)
+2024-07-02 16:39:03 test...
+mse per seq: 545.7412979248537
+23.11380837528581
+30.17906918200144
+37.50008089762615
+44.78030059998294
+51.959640119927954
+58.738261395190136
+65.17653076907239
+72.29704656945654
+78.14334699331997
+83.8532130229904
+ssim per frame: 0.85773355
+0.9368458
+0.91964823
+0.9017294
+0.88411844
+0.8668807
+0.85003203
+0.83263206
+0.81360185
+0.79543334
+0.77641326
+psnr per frame: 19.449638
+22.881481
+21.757328
+20.817265
+20.022556
+19.344614
+18.798353
+18.330938
+17.868107
+17.501293
+17.174435
+lpips per frame: 0.11648972
+0.05097435
+0.06520966
+0.08109857
+0.094209306
+0.109111175
+0.12252835
+0.13739173
+0.15259387
+0.1676841
+0.18409607

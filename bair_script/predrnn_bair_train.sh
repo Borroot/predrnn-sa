@@ -4,8 +4,8 @@ python -u run.py \
     --is_training 1 \
     --device cuda \
     --dataset_name bair \
-    --train_data_paths /data/Action-BAIR/ \
-    --valid_data_paths /data/Action-BAIR/ \
+    --train_data_paths data/Action-BAIR/ \
+    --valid_data_paths data/Action-BAIR/ \
     --save_dir checkpoints/bair_action_cond_predrnn \
     --gen_frm_dir results/bair_action_cond_predrnn \
     --model_name action_cond_predrnn \
@@ -26,9 +26,9 @@ python -u run.py \
     --r_exp_alpha 2500 \
     --lr 0.0001 \
     --batch_size 16 \
-    --max_iterations 80000 \
-    --display_interval 100 \
+    --max_iterations 100 \
+    --display_interval 10 \
     --test_interval 5000 \
-    --snapshot_interval 5000 \
+    --snapshot_interval 10 \
     --conv_on_input 1 \
     --res_on_conv 1

@@ -26,8 +26,8 @@ python -u run.py \
     --r_exp_alpha 2500 \
     --lr 0.0001 \
     --batch_size 8 \
-    --max_iterations 100 \
-    --display_interval 10 \
-    --test_interval 5000 \
-    --snapshot_interval 5000 \
-    --pretrained_model ./checkpoints/original/mnist_model.ckpt
+    --max_iterations 30000 \
+    --display_interval 100 \
+    --test_interval 100000 \
+    --snapshot_interval 500 \
+    --pretrained_model ./training_results/mnist_predrnn_v2_attention/model.ckpt-30000

@@ -42,6 +42,12 @@ class SpatioTemporalLSTMCell(nn.Module):
             )
         self.conv_last = nn.Conv2d(num_hidden * 2, num_hidden, kernel_size=1, stride=1, padding=0, bias=False)
 
+        ###################
+        self.W1 = nn.Linear(16 * 16, num_hidden)
+        self.W2 = nn.Linear(num_hidden, num_hidden)
+        ###################
+
+
     def forward(self, x_t, h_t, c_t, m_t):
         x_concat = self.conv_x(x_t)
         h_concat = self.conv_h(h_t)
@@ -65,6 +71,18 @@ class SpatioTemporalLSTMCell(nn.Module):
         mem = torch.cat((c_new, m_new), 1)
         o_t = torch.sigmoid(o_x + o_h + self.conv_o(mem))
         h_new = o_t * torch.tanh(self.conv_last(mem))
+
+        ##################
+        B, C, H, W = h_new.shape
+        H_reshaped = h_new.view(B, C, H * W)
+
+        attention_scores = self.W2(torch.tanh(self.W1(H_reshaped)))
+        attention_weights = torch.softmax(attention_scores, dim=1)
+
+        attention_output = torch.bmm(attention_weights.transpose(1, 2), H_reshaped)
+
+        h_new = attention_output.view(B, C, H, W)
+        ##################
 
         return h_new, c_new, m_new
 

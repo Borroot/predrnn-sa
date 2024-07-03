@@ -6,6 +6,7 @@ from skimage.metrics import structural_similarity as compare_ssim
 from core.utils import preprocess, metrics
 import lpips
 import torch
+import jsonpickle
 
 loss_fn_alex = lpips.LPIPS(net='alex')
 
@@ -103,7 +104,8 @@ def test(model, test_input_handle, configs, itr):
 
             psnr[i] += metrics.batch_psnr(pred_frm, real_frm)
             for b in range(configs.batch_size):
-                score, _ = compare_ssim(pred_frm[b], real_frm[b], full=True, multichannel=True, channel_axis=2)
+                score, _ = compare_ssim(
+                    pred_frm[b], real_frm[b], full=True, multichannel=True, channel_axis=2)
                 ssim[i] += score
 
         # save prediction examples
@@ -125,22 +127,40 @@ def test(model, test_input_handle, configs, itr):
                 cv2.imwrite(file_name, img_pd)
         test_input_handle.next()
 
+    results = dict()
+    results['mse']   = {'per frame': []}
+    results['ssim']  = {'per frame': []}
+    results['psnr']  = {'per frame': []}
+    results['lpips'] = {'per frame': []}
+
     avg_mse = avg_mse / (batch_id * configs.batch_size)
+    results['mse']['average'] = avg_mse
     print('mse per seq: ' + str(avg_mse))
     for i in range(configs.total_length - configs.input_length):
-        print(img_mse[i] / (batch_id * configs.batch_size))
+        result = img_mse[i] / (batch_id * configs.batch_size)
+        print(result)
+        results['mse']['per frame'].append(result)
 
     ssim = np.asarray(ssim, dtype=np.float32) / (configs.batch_size * batch_id)
+    results['ssim']['average'] = np.mean(ssim)
     print('ssim per frame: ' + str(np.mean(ssim)))
     for i in range(configs.total_length - configs.input_length):
         print(ssim[i])
+        results['ssim']['per frame'].append(ssim[i])
 
     psnr = np.asarray(psnr, dtype=np.float32) / batch_id
+    results['psnr']['average'] = np.mean(psnr)
     print('psnr per frame: ' + str(np.mean(psnr)))
     for i in range(configs.total_length - configs.input_length):
         print(psnr[i])
+        results['psnr']['per frame'].append(psnr[i])
 
     lp = np.asarray(lp, dtype=np.float32) / batch_id
+    results['lpips']['average'] = np.mean(lp)
     print('lpips per frame: ' + str(np.mean(lp)))
     for i in range(configs.total_length - configs.input_length):
         print(lp[i])
+        results['lpips']['per frame'].append(lp[i])
+
+    with open("tmp_test_results.txt", "w") as f:
+        f.write(jsonpickle.encode(results))
