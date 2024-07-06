@@ -109,6 +109,7 @@ if __name__ == '__main__':
         data['train'][variant] = load_train_data(variant)
 
     plot_loss(data)
+    plot_framewise_measures(data)
 
-    plot_framewise_measures_overtime(data, 'v2_attention')
-    plot_framewise_measures_overtime(data, 'v2_baseline')
+    # plot_framewise_measures_overtime(data, 'v2_attention')
+    # plot_framewise_measures_overtime(data, 'v2_baseline')
